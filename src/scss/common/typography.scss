@@ -1,20 +1,17 @@
 h1, .h1,
 h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h3, .h3 {
 	font-family: $ff-title;
 	font-weight: $fw-bold;
 	line-height: $lh-title;
-	margin: 0 0 1rem
+	margin: 0;
 }
 
 h1, .h1 {
-	font-size: 32px;
+	font-size: 50px;
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		font-size: 80px
 	}
 }
 
@@ -27,7 +24,8 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-size: 30px
+	font-size: 30px;
+	line-height: 140%;
 }
 
 h4, .h4 {
@@ -48,20 +46,13 @@ h6, .h6 {
 
 a {
 	display: inline-block;
-	text-decoration: underline;
-	transition: color ease-out $tr;
-
-	&:hover {
-		text-decoration: none
-	}
+	text-decoration: none;
+	transition: color ease-out $tr,
+			background-color ease $tr;
 }
 
 p {
-	margin-top: 0;
-
-	&:last-of-type {
-		margin-bottom: 0
-	}
+	margin: 0;
 }
 
 b, strong {

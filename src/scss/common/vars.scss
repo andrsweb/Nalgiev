@@ -15,8 +15,9 @@ $container-xl: 1200px;
 $container-padding: 24px;
 
 // Font families.
-$ff			: Arial, sans-serif;
-$ff-title	: Arial, sans-serif;
+$ff			: 'Gogh', sans-serif;
+$ff-title	: 'Bebas Neue Cyrillic', sans-serif;
+$btn	    : 'Inter', sans-serif;
 
 // Font sizes.
 $fs-xs	: 12px;
@@ -33,12 +34,24 @@ $fw-semibold: 600;
 $fw-bold	: 700;
 
 // Line heights.
-$lh			: 1.5;
-$lh-title	: 1.3;
+$lh			: 1.1;
+$lh-title	: 1;
+$lh-max	    : 1.4;
+$lh-bet	    : 1.3;
 
 // Colors.
-$white	: #FFFFFF;
-$black	: #000000;
+$white	 : #FFFFFF;
+$black	 : #000000;
+$accent	 : #D1A972;
+$grey	 : #A7A7A7;
+$light	 : #A6A6A6;
+$dark    : #2E2E2E;
+$main-bg : #252525;
+$text    : #252525;
+$inp     : #515151;
+
+//shadows
+$shadow : drop-shadow(0px 0px 12px rgba(209, 169, 114, 0.62));
 
 // Others.
 $tr: 0.35s;
