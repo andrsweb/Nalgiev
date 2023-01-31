@@ -1,6 +1,6 @@
 .header {
 	background-color: $main-bg;
-	padding: 18px 0;
+	padding: 19px 0;
 
 	.container {
 		max-width: 1300px;
@@ -169,6 +169,7 @@
 		display: none;
 
 		&.opened {
+			z-index: 100;
 			padding-top: 20px;
 			height: 100vh;
 			position: fixed;

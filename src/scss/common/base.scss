@@ -44,3 +44,10 @@ ul {
 		margin-top: auto
 	}
 }
+
+h1,h2,h3,h4,h5,h6,p,a,div,li {
+	&::selection {
+		color: $accent;
+		background-color: $dark;
+	}
+}

@@ -1,0 +1,47 @@
+.hero-bottom {
+	background: $main-bg;
+	border-top: 2px solid hsba(0, 0%, 18%, 1);
+	border-bottom: 2px solid hsba(0, 0%, 18%, 1);
+
+	.container {
+		max-width: 1380px;
+	}
+
+	&-items {
+		display: flex;
+	}
+	&-item {
+		width: calc( 100% / 3 );
+		border-right: 2px solid $dark;
+		padding: 48px 0 53px;
+
+		&:last-child {
+			border: 0;
+		}
+	}
+	&-inner {
+		padding: 6px 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&-title {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 24px;
+		line-height: $lh-max;
+		color: $white;
+		margin-bottom: 26px;
+	}
+
+	&-text {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 18px;
+		line-height: $lh;
+		color: $light;
+	}
+}

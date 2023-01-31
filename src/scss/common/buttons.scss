@@ -11,13 +11,14 @@
 	border-radius: $bord;
 	background-color: $accent;
 	padding: 23px 45px;
+	text-transform: uppercase;
 	border: 0;
 	transition: background-color ease $tr,
 		filter ease $tr, color ease $tr;
 	cursor: pointer;
 
 	&:hover {
-		background-color: transparent;
+		background-color: $grey;
 		filter: $shadow-2;
 	}
 

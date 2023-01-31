@@ -9,6 +9,12 @@ h3, .h3 {
 
 h1, .h1 {
 	font-size: 50px;
+	font-family: $ff-title;
+	font-style: normal;
+	font-weight: $fw-bold;
+	line-height: $lh;
+	text-align: center;
+	color: $white;
 
 	@media all and (min-width: $lg) {
 		font-size: 80px
@@ -24,8 +30,13 @@ h2, .h2 {
 }
 
 h3, .h3 {
+	font-family: $ff;
+	font-style: normal;
+	font-weight: $fw-medium;
+	line-height: $lh-max;
+	text-align: center;
 	font-size: 30px;
-	line-height: 140%;
+	color: $white;
 }
 
 a {
