@@ -1,0 +1,68 @@
+.main-video {
+	padding: 75px 0;
+
+	.container {
+		max-width: 1300px;
+	}
+
+	h2 {
+		font-family: $ff-title;
+		font-style: normal;
+		font-weight: $fw-bold;
+		line-height: $lh;
+		color: $main-bg;
+		font-size: 70px;
+		margin-bottom: 50px;
+	}
+
+	&-wrapper {
+		display: flex;
+	}
+
+	&-left {
+		width: calc( 40% );
+		display: flex;
+		justify-content: center;
+
+		&-wrapper {
+			width: 345px;
+			height: 614px;
+		}
+	}
+
+	&-right {
+		width: calc( 60% - 10px );
+		margin-left: 10px;
+	}
+
+	&-title {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 24px;
+		line-height: 33px;
+		color: $main-bg;
+	}
+
+	&-item {
+		font-family: 'Gogh';
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 18px;
+		line-height: $lh-max;
+		color: $main-bg;
+		margin-bottom: 24px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&-list {
+		margin-bottom: 53px;
+	}
+
+	.bottom-list {
+		margin-bottom: 64px;
+	}
+}
