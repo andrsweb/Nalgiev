@@ -1,0 +1,50 @@
+.button {
+	font-family: $ff;
+	font-style: normal;
+	font-weight: $fw-bold;
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: 0.065em;
+	color: $white;
+	filter: $shadow-1;
+	border-radius: $bord;
+	background-color: $accent;
+	padding: 23px 45px;
+	border: 0;
+	transition: background-color ease $tr,
+		filter ease $tr, color ease $tr;
+	cursor: pointer;
+
+	&:hover {
+		background-color: transparent;
+		filter: $shadow-2;
+	}
+
+	&.white {
+		border: 2px solid $accent;
+		background-color: $white;
+		color: $main-bg;
+		filter: none;
+
+		&:hover {
+			background-color: $accent;
+			filter: $shadow-1;
+			color: $white;
+		}
+	}
+
+	&.form {
+		border: 1px solid $white;
+		color: $white;
+		background: transparent;
+		filter: none;
+		padding: 10px 24px;
+		font-size: 15px;
+
+		&:hover {
+			background-color: $white;
+			color: $black;
+		}
+	}
+}

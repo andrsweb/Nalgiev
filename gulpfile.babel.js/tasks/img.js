@@ -21,7 +21,7 @@ const img = () => {
 			} ) )
 		} ) )
 		.pipe( newer( path.img.dest ) )
-		.pipe( webp() )
+		.pipe( webp( { quality: 95 }) )
 		.pipe( gulp.dest( path.img.dest ) )
 		.pipe( gulp.src( path.img.src ) )
 		.pipe( newer( path.img.dest ) )

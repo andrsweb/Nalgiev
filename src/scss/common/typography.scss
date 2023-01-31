@@ -28,22 +28,6 @@ h3, .h3 {
 	line-height: 140%;
 }
 
-h4, .h4 {
-	font-size: $fs-xl;
-
-	@media all and (min-width: $lg) {
-		font-size: 24px
-	}
-}
-
-h5, .h5 {
-	font-size: $fs-xl
-}
-
-h6, .h6 {
-	font-size: $fs-lg
-}
-
 a {
 	display: inline-block;
 	text-decoration: none;
@@ -53,6 +37,10 @@ a {
 
 p {
 	margin: 0;
+}
+
+img {
+	display: block;
 }
 
 b, strong {
