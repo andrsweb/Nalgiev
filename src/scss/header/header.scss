@@ -1,0 +1,81 @@
+.header {
+	background-color: $main-bg;
+	padding: 18px 0;
+
+	.container {
+		max-width: 1300px;
+	}
+
+	&-logo {
+		display: flex;
+		flex-direction: column;
+		max-width: 186px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 18px;
+		line-height: $lh-bet;
+		color: $white;
+		transition: opacity ease $tr;
+		margin-right: 84px;
+
+		&:hover {
+			opacity: $op;
+		}
+
+		span {
+			font-size: 12px;
+		}
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&-nav {
+		display: flex;
+	}
+
+	&-link {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 15px;
+		line-height: $lh-bet;
+		color: $white;
+		margin-right: 30px;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: $op;
+		}
+
+		&:last-child {
+			margin-right: 35px;
+		}
+	}
+
+	&-phone {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 18px;
+		line-height: $lh-bet;
+		color: $white;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	.form-anchor {
+		margin-right: 26px;
+		padding: 8px 23px;
+	}
+
+	.burger-menu {
+		display: none;
+	}
+}
