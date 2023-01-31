@@ -1,0 +1,213 @@
+.header {
+	background-color: $main-bg;
+	padding: 18px 0;
+
+	.container {
+		max-width: 1300px;
+	}
+
+	.mobile-left {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media all and (min-width: $lg) {
+			display: none;
+		}
+
+		.mobile-link {
+			margin-right: 19px;
+			font-size: 11px;
+		}
+
+		.mobile-phone {
+			transition: opacity ease $tr;
+
+			&:hover {
+				opacity: $op;
+			}
+		}
+	}
+
+	&-logo {
+		display: none;
+		flex-direction: column;
+		max-width: 186px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 18px;
+		line-height: $lh-bet;
+		color: $white;
+		transition: opacity ease $tr;
+		margin-right: 40px;
+
+		@media all and (min-width: $lg) {
+			display: flex;
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 18px;
+			margin-right: 82px;
+		}
+
+		&.mobile-logo {
+			display: flex;
+			font-size: 15px;
+			margin-right: 0;
+
+			@media all and (min-width: $lg) {
+				display: none;
+			}
+			
+			span {
+				font-size: 10px;
+			}
+		}
+
+		&:hover {
+			opacity: $op;
+		}
+
+		span {
+			font-size: 12px;
+		}
+	}
+
+	&-wrapper {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media all and (min-width: $lg) {
+			justify-content: flex-start;
+		}
+	}
+
+	&-nav {
+		display: none;
+		align-items: center;
+
+		@media all and (min-width: $lg) {
+			display: flex;
+		}
+	}
+
+	&-link {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 15px;
+		line-height: $lh-bet;
+		color: $white;
+		margin-right: 15px;
+		transition: opacity ease $tr;
+
+		@media all and (min-width: $lg) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 15px;
+			margin-right: 30px;
+		}
+
+		&:hover {
+			opacity: $op;
+		}
+
+		&:last-child {
+			margin-right: 35px;
+		}
+	}
+
+	&-phone {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 15px;
+		line-height: $lh-bet;
+		color: $white;
+		transition: opacity ease $tr;
+
+		@media all and (min-width: $xl) {
+			font-size: 18px;
+		}
+		
+		&:hover {
+			opacity: $op;
+		}
+
+		&-mob {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-regular;
+			font-size: 15px;
+			line-height: $lh-bet;
+			color: $white;
+			margin: 20px 0;
+			transition: opacity ease $tr;
+
+			@media all and (min-width: $lg) {
+				display: none;
+			}
+
+			&:hover {
+				opacity: $op;
+			}
+		}
+	}
+
+	.form-anchor {
+		margin-right: 26px;
+		padding: 8px 23px;
+	}
+
+	.burger-menu {
+		display: none;
+
+		&.opened {
+			padding-top: 20px;
+			height: 100vh;
+			position: fixed;
+			background: $main-bg;
+			width: 50%;
+			right: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			top: 64px;
+
+			@media all and (min-width: $lg) {
+				width: 20%;
+				height: 100%;
+			}
+
+			.form-anchor {
+				margin-right: 0;
+
+				@media all and (min-width: $lg) {
+					display: none;
+				}
+			}
+		}
+
+		.burger-link {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-regular;
+			font-size: 15px;
+			line-height: $lh-bet;
+			color: $white;
+			margin-bottom: 20px;
+			width: 120px;
+			transition: color ease $tr;
+
+			&:hover {
+				color: $accent;
+			}
+		}
+	}
+}
