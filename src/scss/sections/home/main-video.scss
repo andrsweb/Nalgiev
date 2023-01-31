@@ -1,5 +1,5 @@
 .main-video {
-	padding: 75px 0;
+	padding: 75px 0 82px;
 
 	.container {
 		max-width: 1300px;
@@ -65,4 +65,10 @@
 	.bottom-list {
 		margin-bottom: 64px;
 	}
+}
+
+.button-wrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 18px;
 }

@@ -22,7 +22,12 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 24px;
+	font-family: $ff-title;
+	font-style: normal;
+	font-weight: $fw-bold;
+	font-size: 70px;
+	line-height: $lh-title;
+	color: $white;
 }
 
 h3, .h3 {

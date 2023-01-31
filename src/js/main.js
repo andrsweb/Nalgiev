@@ -6,3 +6,5 @@ import './header'
 import './fancyBox'
 import './lazy-frame'
 import './inputs'
+import './slides/slider'
+

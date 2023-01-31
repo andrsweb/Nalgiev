@@ -35,6 +35,18 @@
 		}
 	}
 
+	&.dark {
+		border: 2px solid $accent;
+		background-color: $main-bg;
+		color: $white;
+
+		&:hover {
+			background-color: $accent;
+			filter: $shadow-1;
+			color: $white;
+		}
+	}
+
 	&.form-anchor {
 		border: 1px solid $white;
 		color: $white;
@@ -132,4 +144,33 @@
 	&:hover {
 		opacity: $op;
 	}
+}
+
+.swiper-prev, .swiper-next {
+	width: 46px;
+	height: 46px;
+	border: 1px solid $accent;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotate( 180deg );
+	transition: background-color ease $tr;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+
+	&.black {
+		background-color: $main-bg;
+
+		&:hover {
+			background-color: $accent;
+		}
+	}
+}
+
+.swiper-next {
+	transform: rotate( 0 );
+	right: 0;
 }

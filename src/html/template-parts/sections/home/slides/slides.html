@@ -1,0 +1,30 @@
+<section class="slider">
+	<div class="container">
+		<h2>
+			Примеры работ до\после
+		</h2>
+		<div class="slider-wrapper">
+			<div class="swiper main-swiper">
+				<div class="swiper-wrapper">
+					@@loop( 'slide.html', [
+						{ 'src1': 'img/home/slider/1.png', 'src2': 'img/home/slider/2.jpg' },
+						{ 'src1': 'img/home/slider/3.jpg', 'src2': 'img/home/slider/4.jpg' },
+						{ 'src1': 'img/home/slider/5.png', 'src2': 'img/home/slider/6.png' },
+					] )
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-prev black">
+					<img src="img/arrow.png" width="50" height="50" alt="">
+				</div>
+				<div class="swiper-next black">
+					<img src="img/arrow.png" width="50" height="50" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="button-wrapper">
+			<a class="button dark" href="#">
+				ХОЧУ ТАК ЖЕ
+			</a>
+		</div>
+	</div>
+</section>
