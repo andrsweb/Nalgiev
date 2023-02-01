@@ -1,6 +1,6 @@
 .header {
 	background-color: $main-bg;
-	padding: 19px 0;
+	padding: 12px 0;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -10,6 +10,10 @@
 		box-shadow ease $tr,
 		padding ease $tr;
 
+	@media all and (min-width: $md) {
+		padding: 19px 0;
+	}
+
 	&.scrolled {
 		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.623);
 		padding: 14px 0;
@@ -17,9 +21,11 @@
 
 	.container {
 		max-width: 1300px;
+		padding: 0 15px;
 
 		@media all and (min-width: $lg) {
 			padding: 0 19px 0 78px;
+			padding: 0 24px;
 		}
 	}
 
@@ -34,10 +40,16 @@
 
 		.mobile-link {
 			font-size: 11px;
+			padding: 5px 10px;
 		}
 
 		.mobile-phone {
 			transition: opacity ease $tr;
+
+			img {
+				width: 25px;
+				height: 25px;
+			}
 
 			&:hover {
 				opacity: $op;
@@ -190,9 +202,14 @@
 	}
 
 	.form-anchor {
-		margin-right: 26px;
+	
+		margin-right: 12px;
 		padding: 10px 20px;
 		text-transform: none;
+
+		@media all and (min-width: $lg) {
+			margin-right: 26px;
+		}
 		
 		&.desktop-btn {
 			display: none;
@@ -217,12 +234,13 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			top: 64px;
+			top: 40px;
 			padding-left: 30px;
 
 			@media all and (min-width: $lg) {
 				width: 20%;
 				height: 100%;
+				top: 64px;
 			}
 
 			.form-anchor {

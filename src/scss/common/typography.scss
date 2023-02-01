@@ -15,6 +15,7 @@ h1, .h1 {
 	line-height: $lh;
 	text-align: center;
 	color: $white;
+	max-width: 280px;
 
 	@media all and (min-width: $lg) {
 		font-size: 80px

@@ -39,7 +39,11 @@ ul {
 	width: 100%;
 	min-height: 100vh;
 	overflow: hidden;
-	padding-top: 68px;
+	padding-top: 25px;
+
+	@media all and (min-width: $lg) {
+		padding-top: 68px;
+	}
 
 	.footer {
 		margin-top: auto
