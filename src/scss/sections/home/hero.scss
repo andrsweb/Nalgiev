@@ -1,15 +1,11 @@
 .hero {
 	position: relative;
-	padding: 19.4vw 0 62px;
+	padding: 19.7vw 0 62px;
 	width: 100%;
 	background-image: url('../img/home/hero/hero-bg.png');
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
-
-	// @media all and (min-width: 1600px) {
-	// 	padding: 28vw 0 62px;
-	// }
 
 	&::before {
 		content: "";

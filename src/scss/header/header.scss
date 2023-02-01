@@ -1,9 +1,26 @@
 .header {
 	background-color: $main-bg;
 	padding: 19px 0;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	transition:
+		box-shadow ease $tr,
+		padding ease $tr;
+
+	&.scrolled {
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.623);
+		padding: 14px 0;
+	}
 
 	.container {
 		max-width: 1300px;
+
+		@media all and (min-width: $lg) {
+			padding: 0 19px 0 78px;
+		}
 	}
 
 	.mobile-left {
@@ -16,7 +33,6 @@
 		}
 
 		.mobile-link {
-			margin-right: 19px;
 			font-size: 11px;
 		}
 
@@ -45,6 +61,7 @@
 		@media all and (min-width: $lg) {
 			display: flex;
 			font-size: 15px;
+			margin-right: 20px;
 		}
 
 		@media all and (min-width: $xl) {
@@ -89,9 +106,15 @@
 	&-nav {
 		display: none;
 		align-items: center;
+		margin-right: 42px;
 
 		@media all and (min-width: $lg) {
 			display: flex;
+			margin-right: 20px;
+		}
+
+		@media all and (min-width: $xl) {
+			margin-right: 42px;
 		}
 	}
 
@@ -102,24 +125,24 @@
 		font-size: 15px;
 		line-height: $lh-bet;
 		color: $white;
-		margin-right: 15px;
 		transition: opacity ease $tr;
+
+		&:last-child {
+			margin-right: 0;
+		}
 
 		@media all and (min-width: $lg) {
 			font-size: 12px;
+			margin-right: 10px;
 		}
 
-		@media all and (min-width: $xl) {
+		@media all and (min-width: $xxl) {
 			font-size: 15px;
 			margin-right: 30px;
 		}
 
 		&:hover {
 			opacity: $op;
-		}
-
-		&:last-child {
-			margin-right: 35px;
 		}
 	}
 
@@ -131,6 +154,11 @@
 		line-height: $lh-bet;
 		color: $white;
 		transition: opacity ease $tr;
+		display: none;
+
+		@media all and (min-width: $lg) {
+			display: flex;
+		}
 
 		@media all and (min-width: $xl) {
 			font-size: 18px;
@@ -141,6 +169,7 @@
 		}
 
 		&-mob {
+			display: block;
 			font-family: $ff;
 			font-style: normal;
 			font-weight: $fw-regular;
@@ -162,7 +191,16 @@
 
 	.form-anchor {
 		margin-right: 26px;
-		padding: 8px 23px;
+		padding: 10px 20px;
+		text-transform: none;
+		
+		&.desktop-btn {
+			display: none;
+
+			@media all and (min-width: $lg) {
+				display: flex;
+			}
+		}
 	}
 
 	.burger-menu {
@@ -174,12 +212,13 @@
 			height: 100vh;
 			position: fixed;
 			background: $main-bg;
-			width: 50%;
+			width: 205px;
 			right: 0;
 			display: flex;
 			flex-direction: column;
-			align-items: center;
+			align-items: flex-start;
 			top: 64px;
+			padding-left: 30px;
 
 			@media all and (min-width: $lg) {
 				width: 20%;

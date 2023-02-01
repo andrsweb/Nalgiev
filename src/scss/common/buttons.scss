@@ -146,7 +146,7 @@
 	}
 }
 
-.swiper-prev, .swiper-next {
+.swiper-prev, .swiper-next, .swiper-next-video, .swiper-prev-video  {
 	width: 46px;
 	height: 46px;
 	border: 1px solid $accent;
@@ -170,7 +170,11 @@
 	}
 }
 
-.swiper-next {
+.swiper-next, .swiper-next-video {
 	transform: rotate( 0 );
 	right: 0;
+}
+
+.swiper-prev, .swiper-prev-video {
+	left: 0;
 }

@@ -2,7 +2,7 @@
 	padding: 75px 0 82px;
 
 	.container {
-		max-width: 1300px;
+		max-width: 1190px;
 	}
 
 	h2 {
@@ -17,10 +17,10 @@
 
 	&-wrapper {
 		display: flex;
+		padding: 0 75px 0 79px;
 	}
 
 	&-left {
-		width: calc( 40% );
 		display: flex;
 		justify-content: center;
 
@@ -31,8 +31,7 @@
 	}
 
 	&-right {
-		width: calc( 60% - 10px );
-		margin-left: 10px;
+		padding-left: 90px;
 	}
 
 	&-title {
@@ -51,7 +50,7 @@
 		font-size: 18px;
 		line-height: $lh-max;
 		color: $main-bg;
-		margin-bottom: 24px;
+		margin-bottom: 8px;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -59,11 +58,16 @@
 	}
 
 	&-list {
-		margin-bottom: 53px;
+		margin-bottom: 27px;
+		padding-left: 25px;
 	}
 
 	.bottom-list {
-		margin-bottom: 64px;
+		margin-bottom: 70px;
+	}
+
+	.white {
+		padding: 23px 51px;
 	}
 }
 

@@ -4,7 +4,7 @@
 	border-bottom: 2px solid hsba(0, 0%, 18%, 1);
 
 	.container {
-		max-width: 1380px;
+		max-width: 1280px;
 	}
 
 	&-items {
@@ -12,18 +12,33 @@
 	}
 	&-item {
 		width: calc( 100% / 3 );
-		border-right: 2px solid $dark;
-		padding: 48px 0 53px;
+		padding: 53px 0 48px;
+		position: relative;
+
+		&::after {
+			position: absolute;
+			right: 0;
+			top: 0;
+			content: "";
+			display: block;
+			width: 2px;
+			height: 100%;
+			background: $dark;
+		}
 
 		&:last-child {
 			border: 0;
+
+			&::after {
+				display: none;
+			}
 		}
 	}
 	&-inner {
-		padding: 6px 50px;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		padding: 0 50px;
 	}
 
 	&-title {
@@ -34,6 +49,7 @@
 		line-height: $lh-max;
 		color: $white;
 		margin-bottom: 26px;
+		max-width: 280px;
 	}
 
 	&-text {
@@ -41,7 +57,7 @@
 		font-style: normal;
 		font-weight: $fw-regular;
 		font-size: 18px;
-		line-height: $lh;
+		line-height: $lh-max;
 		color: $light;
 	}
 }

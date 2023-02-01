@@ -1,38 +1,25 @@
-import Swiper, { Pagination, Navigation } from "swiper"
 
-document.addEventListener( 'DOMContentLoaded', () => {
-	'use strict'
+// import { initSimpleSwiper } from "../common/global"
 
-	initSimpleSwiper()
-} )
+// document.addEventListener( 'DOMContentLoaded', () => {
+// 	'use strict'
 
-const initSimpleSwiper = () => {
+// 	initSimpleSwiper( '.main-swiper', '.main-pagination', '.slider-wrapper',
+// 		{	
+// 			breakpoints: {
+// 				320: {
+// 					slidesPerView: 1,
+// 				},
+// 				576: {
+// 					slidesPerView: 2,
+// 				}
+// 			},
+// 		}
+// 	)
 
-	const swiper = new Swiper( '.main-swiper', {
-
-		direction: 'horizontal',
-		loop: true,
-		slidesPerView: 1,
-
-		breakpoints: {
-			320: {
-				slidesPerView: 1,
-			},
-			576: {
-				slidesPerView: 1,
-			}
-		},
-
-		modules: [Pagination, Navigation],
-
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true
-			},
-
-			navigation: {
-				nextEl: '.swiper-next',
-				prevEl: '.swiper-prev'
-			}
-		})
-}
+// 	initSimpleSwiper( '.swiper.video-swiper', '.video-pagination', '.video-slides-wrapper', 
+// 		{	
+// 			slidesPerView: 1,
+// 		}
+// 	)
+// } )
