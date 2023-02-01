@@ -1,0 +1,53 @@
+<section class="price" id="@@id">
+	<div class="container">
+		<h2>
+			Сколько стоит операция?
+		</h2>
+		<div class="price-wrapper">
+			<div class="dropdown">
+				<div class="dropdown-title">
+					<h3 class="price-start">
+						Стоимость (только операция)
+					</h3>
+					<img src="img/arrow.png" width="40" height="40" alt="">
+				</div>
+				<div class="dropdown-open">
+					<div class="dropdown-inner">
+						@@loop( 'item.html', [
+							{ 'title': 'Коррекция послеоперационной деформации носа', 'value': '150 000 р.', 'class': ''},
+							{ 'title': 'Коррекция спинки носа с центральной и билатеральной остеотомией костей носа (повторная)', 'value': '180 000 р.', 'class': ''},
+							{ 'title': 'Коррекция спинки носа с центральной и билатеральной остеотомией костей носа', 'value': '150 000 р.', 'class': ''},
+							{ 'title': 'Коррекция перегородки носа (септопластика)', 'value': '100 000 р.', 'class': ''},
+							{ 'title': 'Коррекция носа (септопластика) в сочетании с ринопластикой', 'value': '70 000 р.', 'class': ''},
+							{ 'title': 'Коррекция хрящевого отдела носа', 'value': '100 000 р.', 'class': ''},
+							{ 'title': 'Репозиция костей носа', 'value': '70 000 р.', 'class': ''},
+							{ 'title': 'Консультация', 'value': '0 р.', 'class': ''}
+						] )
+					</div>
+				</div>
+			</div>
+			<div class="dropdown">
+				<div class="dropdown-title">
+					<h3 class="price-start">
+						Дополнительные услуги 
+					</h3>
+					<img src="img/arrow.png" width="40" height="40" alt="">
+				</div>
+				<div class="dropdown-open">
+					<div class="dropdown-inner">
+						@@loop( 'item.html', [
+							{ 'title': 'Анестезия (наркоз)', 'value': 'От 18 000 р до 55 000 р', 'class': 'additional'},
+							{ 'title': 'Пребывание в стационаре, койко-день до вечера', 'value': '6 000 р', 'class': 'additional'},
+							{ 'title': 'Пребывание в стационаре, койко-день', 'value': '12 000 р', 'class': 'additional'},
+							{ 'title': 'Компрессионное белье', 'value': 'от 3 000 р до 13 000 р', 'class': 'additional'},
+							{ 'title': 'Компрессионное белье', 'value': 'от 3 000 р до 13 000 р', 'class': 'additional'},
+							{ 'title': 'Местная анестезия', 'value': 'Зависит от операции', 'class': 'additional'},
+							{ 'title': 'Анализы', 'value': 'Зависит от операции', 'class': 'additional'},
+							{ 'title': 'Программы реабилитации после пластических операций', 'value': 'Зависит от операции', 'class': 'additional'},
+						] )
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

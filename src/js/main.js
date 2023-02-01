@@ -8,3 +8,5 @@ import './lazy-frame'
 import './inputs'
 import './slides/slides'
 
+import './dropdown'
+
