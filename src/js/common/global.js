@@ -1,31 +1,66 @@
-// import Swiper, { Pagination, Navigation } from "swiper"
+import Swiper, { Pagination, Navigation } from "swiper"
 
-// export const initSimpleSwiper = ( selector, swiperPag, closest, settings ) => {
-// 	const swiperEl = document.querySelector( selector )
+export const initSwiper = (slider, num, group, next, prev, slides, pag ) => {
 
-// 	if( ! swiperEl ) return
+	const swiper = new Swiper(slider, {
 
-// 	const pag = swiperEl.querySelector( swiperPag )
-// 	const prev = swiperEl.closest( closest ).querySelector( '.swiper-prev' )
-// 	const next = swiperEl.closest( closest ).querySelector( '.swiper-next' )
+		direction: 'horizontal',
+		loop: true,
+		slidesPerView: num,
+		slidesPerGroup: group,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			576: {
+				slidesPerView: slides,
+			}
+		},
 
-// 	const defaultSettings = {
-// 		slidesPerGroup: 2,
-// 		spaceBetween: 30,
-// 		loop: true,
-// 		modules: [Pagination, Navigation],
+		modules: [Pagination, Navigation],
 
-// 		pagination: {
-// 			el: pag,
-// 			clickable: true
-// 		},
+			pagination: {
+				el: pag,
+				clickable: true,
+			},
 
-// 		navigation: {
-// 			nextEl: next,
-// 			prevEl: prev
-// 		},
-// 		...settings
-// 	}
+			navigation: {
+				nextEl: next,
+				prevEl: prev
+			}
+		})
+}
 
-// 	const swiper = new Swiper( selector, defaultSettings )
-// }
+export const initVideoSwiper = (slider, num, group, next, prev, slides, pag ) => {
+
+	const swiper = new Swiper(slider, {
+
+		direction: 'horizontal',
+		loop: true,
+		slidesPerView: num,
+		slidesPerGroup: group,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			576: {
+				slidesPerView: slides,
+			}
+		},
+
+	modules: [Pagination, Navigation],
+
+		pagination: {
+			el: pag,
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '">' + (index + 1) + "</span>";
+			},
+		},
+
+		navigation: {
+			nextEl: next,
+			prevEl: prev
+		}
+	})
+}
