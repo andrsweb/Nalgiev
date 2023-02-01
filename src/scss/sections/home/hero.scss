@@ -7,6 +7,10 @@
 	background-position: top;
 	background-repeat: no-repeat;
 
+	@media all and (min-width: 1600px) {
+		padding: 27.7vw 0 62px;
+	}
+
 	&::before {
 		content: "";
 		position: absolute;
