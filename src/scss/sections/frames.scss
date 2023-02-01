@@ -1,0 +1,44 @@
+.frame {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+
+	&-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-color: $black;
+		cursor: pointer;
+
+		&:hover {
+			.play {
+				opacity: 0.5;
+			}
+		}
+
+		&.played {
+			.play {
+				display: none;
+			}
+		}
+	
+		.play {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate( -50%, -50% );
+			transition: opacity ease $tr;
+			pointer-events: none;
+		}
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+		background: $black;
+	}
+
+	.lazyframe__title {
+		display: none;
+	}
+}

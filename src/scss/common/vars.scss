@@ -1,6 +1,7 @@
 // Grid.
 $xs	: 375px;
 $sm	: 480px;
+$m	: 576px;
 $md	: 768px;
 $lg	: 992px;
 $xl	: 1200px;
@@ -16,7 +17,7 @@ $container-padding: 24px;
 
 // Font families.
 $ff			: 'Gogh', sans-serif;
-$ff-title	: 'Bebas Neue Cyrillic', sans-serif;
+$ff-title	: 'Bebas Neue', sans-serif;
 $btn	    : 'Inter', sans-serif;
 
 // Font sizes.
@@ -47,7 +48,6 @@ $grey	 : #A7A7A7;
 $light	 : #A6A6A6;
 $dark    : #2E2E2E;
 $main-bg : #252525;
-$text    : #252525;
 $inp     : #515151;
 
 //shadows

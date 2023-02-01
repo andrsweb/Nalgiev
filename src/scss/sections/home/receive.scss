@@ -1,0 +1,114 @@
+.receive {
+	padding: 60px 0 66px;
+	background-color: $main-bg;
+
+	.container {
+		max-width: 100%;
+	}
+
+	h2 {
+		margin-bottom: 47px;
+		text-align: center;
+		line-height: $lh;
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 20%;
+		margin-bottom: 48px;
+	}
+
+	&-item {
+		position: relative;
+		display: flex;
+		align-items: center;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 20px;
+		line-height: $lh-max;
+		color: $white;
+		border-right: 2px solid $dark;
+		padding: 20px 0;
+
+		&::before {
+			content: "";
+			display: block;
+			width: 100vw;
+			position: absolute;
+			left: -120%;
+			top: 0;
+			height: 2px;
+			background: $dark;
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			width: 100vw;
+			position: absolute;
+			left: -120%;
+			bottom: 0;
+			height: 1px;
+			background: $dark;
+		}
+
+		&:first-child {
+			width: 30%;
+			padding-right: 10px;
+		}
+
+		&:nth-child(2) {
+			width: 28%;
+			padding: 0 33px;
+		}
+
+		&:nth-child(3) {
+			width: 23%;
+			padding: 0 38px;
+		}
+
+		&:nth-child(4) {
+			border-right: 0;
+			padding-left: 34px;
+		}
+		&:nth-child(5) {
+			width: 30%;
+			padding-right: 10px;
+		}
+		&:nth-child(6) {
+			width: 28%;
+			padding-left: 30px;
+		}
+
+		&:last-child {
+			border-right: 0;
+			width: 42%;
+			padding-left: 43px;
+		}
+
+		span {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-bold;
+			font-size: 70px;
+			line-height: $lh-bet;
+			text-align: center;
+			color: $inp;
+			margin-right: 27px;
+		}
+	}
+
+	&-subtext {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 20px;
+		line-height: $lh-max;
+		text-align: center;
+		color: $white;
+		max-width: 823px;
+		margin: 0 auto;
+	}
+}

@@ -11,13 +11,14 @@
 	border-radius: $bord;
 	background-color: $accent;
 	padding: 23px 45px;
+	text-transform: uppercase;
 	border: 0;
 	transition: background-color ease $tr,
 		filter ease $tr, color ease $tr;
 	cursor: pointer;
 
 	&:hover {
-		background-color: transparent;
+		background-color: $grey;
 		filter: $shadow-2;
 	}
 
@@ -26,6 +27,18 @@
 		background-color: $white;
 		color: $main-bg;
 		filter: none;
+
+		&:hover {
+			background-color: $accent;
+			filter: $shadow-1;
+			color: $white;
+		}
+	}
+
+	&.dark {
+		border: 2px solid $accent;
+		background-color: $main-bg;
+		color: $white;
 
 		&:hover {
 			background-color: $accent;
@@ -131,4 +144,55 @@
 	&:hover {
 		opacity: $op;
 	}
+}
+
+.swiper-prev, .swiper-next, .swiper-next-video, .swiper-prev-video, 
+.swiper-next-gallery, .swiper-prev-gallery {
+	width: 46px;
+	height: 46px;
+	border: 2px solid $accent;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotate( 180deg );
+	transition: background-color ease $tr;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+
+	&.white {
+		background-color: $white;
+
+		img {
+			transition: filter ease $tr;
+			filter: brightness( 0 );
+		}
+
+		&:hover {
+			background-color: $accent;
+
+			img {
+				filter: brightness( 100% );
+			}
+		}
+	}
+
+	&.black {
+		background-color: $main-bg;
+
+		&:hover {
+			background-color: $accent;
+		}
+	}
+}
+
+.swiper-next, .swiper-next-video, .swiper-next-gallery {
+	transform: rotate( 0 );
+	right: 0;
+}
+
+.swiper-prev, .swiper-prev-video, .swiper-prev-gallery {
+	left: 0;
 }

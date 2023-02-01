@@ -1,3 +1,6 @@
+@import '../../node_modules/swiper/swiper-bundle.min';
+@import '../../node_modules/@fancyapps/ui/dist/fancybox';
+
 // Defaults styles.
 @import 'common/fonts';
 @import 'common/vars';
@@ -16,3 +19,17 @@
 
 // Home page sections styles.
 @import 'sections/home/hero';
+@import 'sections/home/hero-bottom';
+@import 'sections/home/main-video';
+@import 'sections/frames';
+@import 'sections/home/slider';
+@import 'sections/home/video-slides';
+@import 'sections/home/about';
+@import 'sections/home/info';
+@import 'sections/home/gallery';
+@import 'sections/home/guide';
+@import 'sections/home/receive';
+@import 'sections/home/price';
+@import 'sections/form';
+@import 'sections/home/clinic';
+@import 'sections/home/contacts';

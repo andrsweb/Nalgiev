@@ -1,0 +1,18 @@
+.info {
+	padding: 50px 0;
+	background: $main-bg;
+
+	.container {
+		max-width: 880px;
+	}
+
+	&-text {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 18px;
+		line-height: $lh-max;
+		text-align: center;
+		color: $white;
+	}
+}
