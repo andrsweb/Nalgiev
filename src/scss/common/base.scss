@@ -46,7 +46,7 @@ ul {
 	}
 }
 
-h1,h2,h3,h4,h5,h6,p,a,div,li {
+h1,h2,h3,h4,h5,h6,p,a,div,li, span {
 	&::selection {
 		color: $accent;
 		background-color: $dark;
