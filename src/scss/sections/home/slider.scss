@@ -7,7 +7,7 @@
 	}
 
 	.container {
-		max-width: 1180px;
+		max-width: 1300px;
 	}
 
 	h2 {
@@ -16,6 +16,7 @@
 
 		@media all and (min-width: $lg) {
 			margin-bottom: 58px;
+			font-size: 70px;
 		}
 	}
 
