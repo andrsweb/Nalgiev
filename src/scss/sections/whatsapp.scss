@@ -6,6 +6,10 @@
 	background-image: url( '../img/home/hero/hero-bg.png');
 	background-color: $main-bg;
 
+	@media all and (min-width: $xxl) {
+		height: 100vh;
+	}
+
 	&::before {
 		position: absolute;
 		top: 0;
@@ -90,14 +94,14 @@
 		line-height: 1.2em;
 		margin-bottom: 10px;
 		text-align: left;
-		max-width: 100%;
+		max-width: 700px;
 
 		@media all and (min-width: $m) {
 			font-size: 35px;
 		}
 
 		@media all and (min-width: $lg) {
-			font-size: 48px;
+			font-size: 40px;
 			line-height: 1;
 		}
 	}
@@ -261,7 +265,7 @@
 	}
 }
 
-.whatsapp-page {
+.whatsapp-page, .live-page {
 	background-color: $main-bg;
 
 	.wrapper {

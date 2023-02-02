@@ -1,0 +1,41 @@
+.live-page {
+	h1 {
+		margin-bottom: 40px;
+	}
+
+	h2 {
+		margin-bottom: 25px;
+	}
+
+	h3 {
+		text-align: left;
+		margin-bottom: 30px;
+	}
+
+	.for {
+		color: $white;
+	}
+
+	.live-links {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-top: 50px;
+
+		.what {
+			margin-right: 30px;
+		}
+
+		.what, .telega {
+			padding: 10px;
+			background-color: $white;
+			border-radius: 20px;
+			transition: opacity ease $tr;
+
+			&:hover {
+				opacity: $op;
+			}
+		}
+	}
+}
