@@ -1,15 +1,58 @@
 .video-slides {
-	padding: 60px 0 70px;
+	padding: 30px 0 40px;
 	background: $main-bg;
+
+	@media all and (min-width: $lg) {
+		padding: 60px 0 70px;
+	}
 
 	.container {
 		max-width: 1180px;
+		padding: 0 16px;
+
+		@media all and (min-width: $lg) {
+			padding: 0 24px;
+		}
 	}
 
 	h2 {
 		max-width: 950px;
-		margin-bottom: 40px;
+		margin-bottom: 26px;
 		line-height: $lh;
+		font-size: 35px;
+
+		@media all and (min-width: $lg) {
+			font-size: 70px;
+			margin-bottom: 40px;
+		}
+	}
+
+	.swiper-prev-video {
+		top: 30%;
+		left: 0;
+
+		@media all and (min-width: $m) {
+			left: 5%;
+		}
+
+		@media all and (min-width: $md) {
+			top: 50%;
+			left: 0;
+		}
+	}
+
+	.swiper-next-video {
+		top: 30%;
+		right: 0;
+
+		@media all and (min-width: $m) {
+			right: 5%;
+		}
+
+		@media all and (min-width: $md) {
+			top: 50%;
+			right: 0;
+		}
 	}
 
 	&-wrapper {
@@ -21,45 +64,81 @@
 	}
 
 	&-box {
-		background-color: $dark;
-		width: 994px;
+		width: 100%;
+
+		@media all and (min-width: $xl) {
+			width: 994px;
+			background-color: $dark;
+		}
 	}
 }
 
 .video-slide {
 	display: flex;
 	justify-content: center;
-	padding: 50px;
+
+	@media all and (min-width: $md) {
+		padding: 50px;
+	}
 
 	&-box {
-		width: 366px;
-		height: 614px;
+		width: 280px;
+		height: 436px;
+
+		@media all and (min-width: $lg) {
+			width: 366px;
+			height: 614px;
+		}
 	}
 
 	&-right {
 		display: flex;
 		flex-direction: column;
-		padding: 20px 30px 80px 60px;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $md) {
+			padding: 20px 30px 80px 60px;
+			margin-bottom: 0;
+		}
+	}
+
+	&-left {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 25px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 0;
+		}
 	}
 
 	&-title {
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
-		font-size: 24px;
+		font-size: 18px;
 		line-height: 33px;
 		color: $white;
-		margin-bottom: 37px;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $lg) {
+			font-size: 24px;
+			margin-bottom: 37px;
+		}
 	}
 
 	&-text {
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-regular;
-		font-size: 18px;
+		font-size: 15px;
 		line-height: $lh-max;
 		color: $white;
 		margin-bottom: 22px;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
 
 		&:last-child {
 			margin-bottom: 0;
@@ -68,25 +147,49 @@
 
 	&-wrapper {
 		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
 	}
 
 	.button-wrapper {
-		margin-top: auto;
-		justify-content: flex-start;
+		margin-top: 20px;
+		justify-content: center;
+
+		@media all and (min-width: $md) {
+			margin-top: auto;
+		}
+
+		@media all and (min-width: $lg) {
+			justify-content: flex-start;
+		}
 	}
 
 	.button.dark {
-		padding: 23px 43px;
-		font-size: 16px;
+		padding: 23px 70px;
+		font-size: 12px;
+		filter: none;
+
+		@media all and (min-width: $md) {
+			padding: 23px 43px;
+			font-size: 16px;
+			filter: $shadow-1;
+		}
 	}
 }
 
 .swiper-pagination.video-pagination {
 	display: flex;
 	justify-content: center;
-	position: absolute;
-	bottom: 55px;
-	left: 27px;
+	position: relative;
+
+	@media all and (min-width: $lg) {
+		position: absolute;
+		bottom: 55px;
+		left: 27px;
+	}
 
 	.swiper-pagination-bullet {
 		display: flex;

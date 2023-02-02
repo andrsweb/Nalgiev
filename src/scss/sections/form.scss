@@ -1,8 +1,8 @@
 .home-form {
-	padding: 30px 0;
+	padding: 40px 0;
 	background-color: $main-bg;
 	
-	@media all and (min-width: $xl) {
+	@media all and (min-width: $lg) {
 		padding: 81px 0 105px;
 	}
 
@@ -11,7 +11,15 @@
 	}
 
 	h2 {
-		margin-bottom: 55px;
+		margin-bottom: 20px;
+		font-size: 35px;
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			font-size: 70px;
+			text-align: left;
+			margin-bottom: 55px;
+		}
 	}
 
 	.consultation {
@@ -22,19 +30,29 @@
 		line-height: $lh-max;
 		color: $white;
 		display: flex;
-		padding-left: 17%;
+		justify-content: center;
+
+		@media all and (min-width: $lg) {
+			padding-left: 17%;
+			justify-content: flex-start;
+		}
 	}
 
 	.radio-label {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-regular;
-		font-size: 18px;
+		font-size: 15px;
 		line-height: $lh-max;
 		color: $white;
 		margin-bottom: 20px;
+
+		@media all and (min-width: $lg) {
+			align-items: center;
+			font-size: 18px;
+		}
 	}
 
 	.radio {
@@ -110,6 +128,7 @@
 		height: 44px;
 		border: none;
 		cursor: pointer;
+		padding: 10px 10px;
 
 		@media all and (min-width: $m) {
 			max-width: 250px;

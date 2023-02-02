@@ -10,7 +10,7 @@
 	filter: $shadow-1;
 	border-radius: $bord;
 	background-color: $accent;
-	padding: 18px 75px;
+	padding: 16px 75px;
 	text-transform: uppercase;
 	border: 0;
 	transition: background-color ease $tr,
@@ -69,12 +69,17 @@
 
 .burger-button {
 	position: relative;
-	width: 33px;
-	height: 25px;
+	width: 23px;
+	height: 15px;
 	transition: opacity ease $tr;
 	cursor: pointer;
 	z-index: 101;
 	margin-left: 26px;
+
+	@media all and (min-width: $md) {
+		width: 33px;
+		height: 25px;
+	}
 
 	span {
 		position: absolute;
@@ -98,15 +103,23 @@
 		}
 
 		&::before {
-			top: 10px;
+			top: 8px;
 			width: 100%;
 			transition: left ease $tr,
 				opacity ease $tr;
+
+				@media all and (min-width: $md) {
+					top: 10px;
+				}
 		}
 
 		&::after {
-			top: 20px;
+			top: 16px;
 			transition: transform ease $tr;
+
+			@media all and (min-width: $md) {
+				top: 20px;
+			}
 		}
 	}
 
@@ -153,8 +166,8 @@
 
 .swiper-prev, .swiper-next, .swiper-next-video, .swiper-prev-video, 
 .swiper-next-gallery, .swiper-prev-gallery {
-	width: 46px;
-	height: 46px;
+	width: 30px;
+	height: 30px;
 	border: 2px solid $accent;
 	border-radius: 50%;
 	display: flex;
@@ -166,6 +179,11 @@
 	position: absolute;
 	top: 50%;
 	z-index: 1;
+
+	@media all and (min-width: $lg) {
+		width: 46px;
+		height: 46px;
+	}
 
 	&.white {
 		background-color: $white;

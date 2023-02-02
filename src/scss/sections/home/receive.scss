@@ -1,22 +1,39 @@
 .receive {
-	padding: 60px 0 66px;
+	padding: 22px 0 26px;
 	background-color: $main-bg;
+
+	@media all and (min-width: $lg) {
+		padding: 60px 0 66px;
+	}
 
 	.container {
 		max-width: 100%;
 	}
 
 	h2 {
-		margin-bottom: 47px;
+		margin-bottom: 21px;
 		text-align: center;
 		line-height: $lh;
+		font-size: 35px;
+
+		@media all and (min-width: $xl) {
+			font-size: 70px;
+			margin-bottom: 47px;
+		}
 	}
 
 	&-items {
 		display: flex;
 		flex-wrap: wrap;
-		padding: 0 20%;
-		margin-bottom: 48px;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $xl) {
+			margin-bottom: 48px;
+		}
+
+		@media all and (min-width: 1900px) {
+			padding: 0 20%;
+		}
 	}
 
 	&-item {
@@ -26,11 +43,13 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
-		font-size: 20px;
+		font-size: 15px;
 		line-height: $lh-max;
 		color: $white;
-		border-right: 2px solid $dark;
+		border-top: 1px solid $dark;
+		border-bottom: 1px solid $dark;
 		padding: 20px 0;
+		width: 100%;
 
 		&::before {
 			content: "";
@@ -54,49 +73,98 @@
 			background: $dark;
 		}
 
-		&:first-child {
-			width: 30%;
-			padding-right: 10px;
+		@media all and (min-width: $lg) {
+			border-top: 0;
+			border-bottom: 0;
+			width: auto;
+			border-right: 2px solid $dark;
+
+			&:first-child {
+				width: 30%;
+				padding-right: 5px;
+			}
+	
+			&:nth-child(2) {
+				width: 28%;
+				padding: 0 15px;
+			}
+	
+			&:nth-child(3) {
+				width: 23%;
+				padding: 0 15px;
+			}
+	
+			&:nth-child(4) {
+				border-right: 0;
+				padding-left: 15px;
+			}
+			&:nth-child(5) {
+				width: 30%;
+				padding-right: 10px;
+			}
+			&:nth-child(6) {
+				width: 28%;
+				padding-left: 15px;
+			}
+	
+			&:last-child {
+				border-right: 0;
+				width: 42%;
+				padding-left: 43px;
+			}
 		}
 
-		&:nth-child(2) {
-			width: 28%;
-			padding: 0 33px;
-		}
-
-		&:nth-child(3) {
-			width: 23%;
-			padding: 0 38px;
-		}
-
-		&:nth-child(4) {
-			border-right: 0;
-			padding-left: 34px;
-		}
-		&:nth-child(5) {
-			width: 30%;
-			padding-right: 10px;
-		}
-		&:nth-child(6) {
-			width: 28%;
-			padding-left: 30px;
-		}
-
-		&:last-child {
-			border-right: 0;
-			width: 42%;
-			padding-left: 43px;
+		@media all and (min-width: $xxl) {
+			font-size: 20px;
+			&:first-child {
+				width: 30%;
+				padding-right: 10px;
+			}
+	
+			&:nth-child(2) {
+				width: 28%;
+				padding: 0 33px;
+			}
+	
+			&:nth-child(3) {
+				width: 23%;
+				padding: 0 38px;
+			}
+	
+			&:nth-child(4) {
+				border-right: 0;
+				padding-left: 34px;
+			}
+			&:nth-child(5) {
+				width: 30%;
+				padding-right: 10px;
+			}
+			&:nth-child(6) {
+				width: 28%;
+				padding-left: 30px;
+			}
+	
+			&:last-child {
+				border-right: 0;
+				width: 42%;
+				padding-left: 43px;
+			}
 		}
 
 		span {
 			font-family: $ff;
 			font-style: normal;
 			font-weight: $fw-bold;
-			font-size: 70px;
+			font-size: 40px;
 			line-height: $lh-bet;
 			text-align: center;
 			color: $inp;
-			margin-right: 27px;
+			margin-right: 21px;
+
+			@media all and (min-width: $lg) {
+				font-size: 70px;
+				margin-right: 27px;
+			}
 		}
 	}
 
@@ -104,11 +172,15 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-regular;
-		font-size: 20px;
+		font-size: 12px;
 		line-height: $lh-max;
 		text-align: center;
-		color: $white;
+		color: $light;
 		max-width: 823px;
 		margin: 0 auto;
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+		}
 	}
 }

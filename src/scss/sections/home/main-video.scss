@@ -1,8 +1,17 @@
 .main-video {
-	padding: 75px 0 82px;
+	padding: 55px 0 42px;
+
+	@media all and (min-width: $lg) {
+		padding: 75px 0 82px;
+	}
 
 	.container {
 		max-width: 1190px;
+		padding: 0 16px;
+
+		@media all and (min-width: $lg) {
+			padding: 0 24px;
+		}
 	}
 
 	h2 {
@@ -11,13 +20,26 @@
 		font-weight: $fw-bold;
 		line-height: $lh;
 		color: $main-bg;
-		font-size: 70px;
+		font-size: 35px;
 		margin-bottom: 50px;
+
+		@media all and (min-width: $lg) {
+			font-size: 70px;
+		}
 	}
 
 	&-wrapper {
 		display: flex;
-		padding: 0 75px 0 79px;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+		
+
+		@media all and (min-width: $lg) {
+			padding: 0 75px 0 79px;
+		}
 	}
 
 	&-left {
@@ -27,30 +49,42 @@
 		&-wrapper {
 			width: 345px;
 			height: 614px;
+
+			margin-bottom: 32px;
 		}
 	}
 
 	&-right {
-		padding-left: 90px;
+		@media all and (min-width: $lg) {
+			padding-left: 90px;
+		}
 	}
 
 	&-title {
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
-		font-size: 24px;
+		font-size: 18px;
 		line-height: 33px;
 		color: $main-bg;
+
+		@media all and (min-width: $lg) {
+			font-size: 24px;
+		}
 	}
 
 	&-item {
 		font-family: 'Gogh';
 		font-style: normal;
 		font-weight: $fw-regular;
-		font-size: 18px;
+		font-size: 15px;
 		line-height: $lh-max;
 		color: $main-bg;
 		margin-bottom: 8px;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
 
 		&:last-child {
 			margin-bottom: 0;
@@ -63,11 +97,27 @@
 	}
 
 	.bottom-list {
-		margin-bottom: 70px;
+		margin-bottom: 17px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 70px;
+		}
 	}
 
 	.white {
-		padding: 23px 51px;
+		padding: 16px 75px;
+
+		@media all and (min-width: $lg) {
+			padding: 23px 51px;
+		}
+	}
+
+	.button-wrapper {
+		justify-content: center;
+
+		@media all and (min-width: $lg) {
+			justify-content: flex-start;
+		}
 	}
 }
 

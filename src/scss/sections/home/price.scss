@@ -1,5 +1,9 @@
 .price {
-	padding: 90px 0 128px;
+	padding: 37px 0 40px;
+
+	@media all and (min-width: $lg) {
+		padding: 90px 0 128px;
+	}
 
 	.container {
 		max-width: 1180px;
@@ -9,15 +13,24 @@
 		color: $main-bg;
 		text-align: center;
 		margin-bottom: 49px;
+		font-size: 35px;
+
+		@media all and (min-width: $lg) {
+			font-size: 70px;
+		}
 	}
 
 	h3 {
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
-		font-size: 18px;
+		font-size: 15px;
 		line-height: $lh-max;
 		color: $main-bg;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
 	}
 
 	&-wrapper {
@@ -30,9 +43,17 @@
 .dropdown {
 	margin-bottom: 24px;
 	border-radius: $bord;
-	width: 592px;
+	width: 342px;
 	margin-bottom: 14px;
 	cursor: pointer;
+
+	@media all and (min-width: $sm) {
+		width: 400px;
+	}
+
+	@media all and (min-width: $md) {
+		width: 592px;
+	}
 
 	&-title {
 		display: flex;
@@ -41,12 +62,16 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
-		font-size: 18px;
+		font-size: 15px;
 		line-height: $lh-max;
 		color: $main-bg;
 		padding: 11px 14px 11px 34px;
 		border: 1px solid $accent;
 		border-radius: $bord;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
 
 		img {
 			filter: brightness( 0 );
@@ -109,12 +134,26 @@
 		}
 
 		.inner-title {
-			width: 78%;
+			width: 75%;
+			font-size: 12px;
+
+			@media all and (min-width: $sm) {
+				font-size: 15px;
+				width: 75%;
+			}
+
+			@media all and (min-width: $md) {
+				width: 78%;
+			}
 		}
 
 		.inner-value {
 			font-weight: $fw-medium;
-			font-size: 15px;
+			font-size: 12px;
+
+			@media all and (min-width: $sm) {
+				font-size: 15px;
+			}
 		}
 	}
 }

@@ -1,5 +1,9 @@
 .about {
-	padding: 78px 0 29px;
+	padding: 29px 0 15px;
+
+	@media all and (min-width: $lg) {
+		padding: 78px 0 29px;
+	}
 
 	.container {
 		max-width: 1190px;
@@ -9,30 +13,42 @@
 		font-family: $ff-title;
 		font-style: normal;
 		font-weight: $fw-bold;
-		font-size: 70px;
+		font-size: 35px;
 		line-height: $lh;
 		color: $main-bg;
 		margin-bottom: 5px;
+
+		@media all and (min-width: $lg) {
+			font-size: 70px;
+		}
 	}
 
 	h3 {
 		font-family: $ff-title;
 		font-style: normal;
 		font-weight: $fw-bold;
-		font-size: 50px;
+		font-size: 35px;
 		line-height: $lh;
 		color: $main-bg;
 		text-align: left;
 		margin: 35px 0 12px;
+
+		@media all and (min-width: $lg) {
+			font-size: 50px;
+		}
 	}
 
 	&-subtitle, &-doctor-item, &-item {
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-regular;
-		font-size: 18px;
+		font-size: 15px;
 		line-height: $lh-max;
 		color: $main-bg;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
 	}
 
 	&-subtitle {
@@ -42,15 +58,30 @@
 
 	&-items {
 		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 	}
 
 	&-info {
-		width: 40%;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 40%;
+		}
 	}
 
 	&-img {
-		width: 60%;
-		padding-left: 69px;
+		width: 100%;
+		display: none;
+
+		@media all and (min-width: $lg) {
+			display: block;
+			width: 60%;
+			padding-left: 69px;
+		}
 	}
 
 	&-doctor {
@@ -92,11 +123,38 @@
 			font-family: $ff;
 			font-style: normal;
 			font-weight: $fw-bold;
-			font-size: 60px;
+			font-size: 40px;
 			line-height: $lh-bet;
 			text-align: center;
 			color: $accent;
-			margin-right: 35px;
+			margin-right: 22px;
+
+			@media all and (min-width: $lg) {
+				font-size: 60px;
+				margin-right: 35px;
+			}
+		}
+	}
+
+	.mobile-doc {
+		margin: 0 auto;
+
+		@media all and (min-width: $lg) {
+			display: none;
+		}
+	}
+
+	.button-wrapper {
+		@media all and (min-width: $lg) {
+			justify-content: flex-start;
+		}
+
+		.white {
+			padding: 12px 60px;
+
+			@media all and (min-width: $lg) {
+				padding: 16px 55px;
+			}
 		}
 	}
 }

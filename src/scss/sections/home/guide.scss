@@ -1,6 +1,10 @@
 .guide {
-	padding: 80px 0 60px;
+	padding: 38px 0 22px;
 	background-color: $main-bg;
+
+	@media all and (min-width: $lg) {
+		padding: 80px 0 60px;
+	}
 
 	.container {
 		max-width: 100%;
@@ -10,31 +14,57 @@
 		line-height: $lh;
 		margin-bottom: 15px;
 		max-width: 607px;
+		font-size: 35px;
+
+		@media all and (min-width: $lg) {
+			font-size: 70px;
+		}
 	}
 
 	&-wrapper {
 		display: flex;
-		padding: 0 19%;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+
+		@media all and (min-width: $xl) {
+			padding: 0 19%;
+		}
 	}
 
 	&-info {
-		width: 59%;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 59%;
+		}
 	}
 
 	&-img {
 		width: 41%;
 		position: relative;
 		padding-left: 20px;
+		display: none;
+
+		@media all and (min-width: $lg) {
+			display: block;
+		}
 	}
 
 	&-subtitle {
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
-		font-size: 24px;
+		font-size: 18px;
 		line-height: 33px;
 		color: $white;
-		margin-bottom: 42px;
+
+		@media all and (min-width: $lg) {
+			font-size: 24px;
+			margin-bottom: 42px;
+		}
 	}
 
 	&-list {
@@ -45,12 +75,16 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-regular;
-		font-size: 18px;
+		font-size: 15px;
 		line-height: $lh-max;
 		color: $white;
 		position: relative;
 		padding-left: 30px;
 		margin-bottom: 15px;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
 
 		&:last-child {
 			margin-bottom: 0;
@@ -74,25 +108,30 @@
 		margin-bottom: 28px;
 		display: flex;
 		position: relative;
+		flex-direction: column;
 
-		&::before {
-			content: "";
-			position: absolute;
-			left: -58%;
-			top: 0;
-			width: 100vw;
-			height: 2px;
-			background-color: $dark;
-		}
+		@media all and (min-width: $lg) {
+			flex-direction: row;
 
-		&::after {
-			content: "";
-			position: absolute;
-			right: -127%;
-			bottom: 0;
-			width: 100vw;
-			height: 2px;
-			background-color: $dark;
+			&::before {
+				content: "";
+				position: absolute;
+				left: -58%;
+				top: 0;
+				width: 100vw;
+				height: 2px;
+				background-color: $dark;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				right: -127%;
+				bottom: 0;
+				width: 100vw;
+				height: 2px;
+				background-color: $dark;
+			}
 		}
 	}
 
@@ -100,26 +139,40 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-regular;
-		font-size: 18px;
+		font-size: 12px;
 		line-height: $lh-max;
 		color: $white;
-		border-right: 2px solid $dark;
-		padding: 25px 10px;
+		width: 100%;
+		padding: 10px 0 10px 30px;
+		border-top: 1px solid $dark;
+		border-bottom: 1px solid $dark;
+	
 
-		&:first-child {
-			padding-left: 0;
-			width: 31%;
+		@media all and (min-width: $lg) {
+			border-top: 0;
+			border-bottom: 0;
+			padding: 25px 10px;
+			border-right: 2px solid $dark;
+
+			&:first-child {
+				padding-left: 0;
+				width: 31%;
+			}
+	
+			&:nth-child(2) {
+				width: 37%;
+				padding: 25px 20px;
+			}
+	
+			&:last-child {
+				border-right: 0;
+				width: 32%;
+				padding: 25px 70px 25px 32px;
+			}
 		}
 
-		&:nth-child(2) {
-			width: 37%;
-			padding: 25px 20px;
-		}
-
-		&:last-child {
-			border-right: 0;
-			width: 32%;
-			padding: 25px 70px 25px 32px;
+		@media all and (min-width: $xl) {
+			font-size: 18px;
 		}
 	}
 
@@ -132,5 +185,18 @@
 		color: $light;
 		max-width: 547px;
 		margin-bottom: 45px;
+	}
+
+	.button-wrapper {
+		@media all and (min-width: $lg) {
+			justify-content: flex-start;
+		}
+	}
+
+	.guide-mob {
+		margin: 0 auto;
+		@media all and (min-width: $lg) {
+			display: none;
+		}
 	}
 }

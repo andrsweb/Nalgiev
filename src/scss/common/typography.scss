@@ -17,8 +17,13 @@ h1, .h1 {
 	color: $white;
 	max-width: 280px;
 
+	@media all and (min-width: $md) {
+		max-width: 600px;
+	}
+
 	@media all and (min-width: $lg) {
-		font-size: 80px
+		font-size: 80px;
+		max-width: 749px;
 	}
 }
 

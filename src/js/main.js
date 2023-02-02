@@ -9,4 +9,5 @@ import './inputs'
 import './slides/slides'
 
 import './dropdown'
+import './lazyMap'
 
