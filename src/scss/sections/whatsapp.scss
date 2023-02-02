@@ -1,0 +1,270 @@
+.whatsapp {
+	position: relative;
+	padding: 40px 0 80px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url( '../img/home/hero/hero-bg.png');
+	background-color: $main-bg;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.315);
+	}
+
+	.container {
+		max-width: 1220px;
+
+	}
+
+	&-logo {
+
+		&-wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 10px 0;
+		}
+	}
+
+	&-wrapper {
+		position: relative;
+		padding: 5px;
+		display: flex;
+		flex-direction: column;
+		border-radius: 10px;
+		background-color: rgba(0, 0, 0, 0.582);
+		padding: 20px;
+
+
+		@media all and (min-width: $m) {
+			padding: 10px;
+		}
+
+		@media all and (min-width: $md) {
+			padding: 20px;
+		}
+
+		@media all and (min-width: $xl) {
+			padding: 40px;
+		}
+	}
+
+	&-img {
+		margin-bottom: 20px;
+
+		@media all and (min-width: $md) {
+			margin-bottom: 0;
+		}
+
+		img {
+			margin: 0 auto;
+		}
+	}
+
+	&-inner {
+		@media all and (min-width: $md) {
+			margin-right: 30px;
+		}
+	}
+
+	&-info {
+		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
+	}
+
+	h1 {
+		font-size: 22px;
+		font-family: $ff-title;
+		font-weight: $fw-regular;
+		text-transform: uppercase;
+		line-height: 1.2em;
+		margin-bottom: 10px;
+		text-align: left;
+		max-width: 100%;
+
+		@media all and (min-width: $m) {
+			font-size: 35px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 48px;
+			line-height: 1;
+		}
+	}
+
+	h2 {
+		font-size: 15px;
+		font-weight: 100;
+		text-transform: uppercase;
+		line-height: 1.2em;
+		color: $white;
+		margin-bottom: 10px;
+
+		@media all and (min-width: $m) {
+			font-size: 20px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+			line-height: 1;
+		}
+	}
+
+	&-text {
+		padding-left: 20px;
+		font-weight: $fw-light;
+		margin-bottom: 20px;
+		line-height: 20px;
+		font-size: 12px;
+		color: $white;
+
+		@media all and (min-width: $m) {
+			font-size: 23px;
+			margin-bottom: 40px;
+			font-size: 16px;
+			line-height: 25px;
+		}
+	}
+
+	&-form-title {
+		font-size: 20px;
+		font-weight: 300;
+		color: $white;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	&-form {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 80px;
+
+		@media all and (min-width: $md) {
+			align-items: flex-start;
+		}
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
+
+		input {
+			width: 100%;
+			max-width: 374px;
+			height: 42px;
+			font-family: $ff;
+			font-weight: $fw-regular;
+			font-size: 16px;
+			line-height: 21px;
+			color: $main-bg;
+			padding-left: 20px;
+			margin-right: 10px;
+			border: 0;
+			margin-bottom: 10px;
+
+			@media all and (min-width: $xl) {
+				margin-bottom: 0;
+			}
+
+			&::placeholder {
+				opacity: 1;
+				color: $grey;
+			}
+		}
+	}
+
+	&-button-wrapp {
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+		img {
+			margin-left: 10px;
+		}
+	}
+
+	&-click {
+		font-family: sans-serif;
+		font-weight: $fw-light;
+		position: absolute;
+		bottom: -25px;
+		left: 0;
+		font-weight: $fw-regular;
+		font-size: 10px;
+		line-height: 18px;
+		color: $white;
+		white-space: nowrap;
+
+		@media all and (min-width: $sm) {
+			font-size: 13px;
+		}
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -16px;
+	}
+
+	&-item {
+		width: calc( 100% / 2 );
+		padding: 0 16px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+
+		@media all and (min-width: $lg) {
+			width: calc( 100% / 4 );
+		}
+	}
+
+	&-num {
+		font-weight: $fw-regular;
+		font-size: 64px;
+		line-height: 83px;
+		text-align: center;
+		color: $accent;
+	}
+
+	&-desc {
+		font-weight: $fw-regular;
+		font-size: 15px;
+		line-height: 26px;
+		text-align: center;
+		color: $white;
+
+		@media all and (min-width: $xl) {
+			font-size: 18px;
+		}
+	}
+
+	&-go {
+		font-size: 20px;
+		font-weight: normal;
+		text-transform: uppercase;
+		line-height: 1.5em;
+		text-align: center;
+		color: $white;
+		margin-bottom: 10px;
+	}
+}
+
+.whatsapp-page {
+	background-color: $main-bg;
+
+	.wrapper {
+		padding-top: 0;
+	}
+}
