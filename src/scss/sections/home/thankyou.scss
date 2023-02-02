@@ -1,0 +1,23 @@
+.thankyou-wrapper {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $main-bg;
+
+	h1 {
+		font-family: $ff;
+		color: $accent;
+		text-align: center;
+		font-size: 20px;
+		margin-bottom: 50px;
+		max-width: 1000px;
+		padding: 0 20px;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+		}
+	}
+}

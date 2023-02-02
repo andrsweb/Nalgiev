@@ -195,8 +195,100 @@
 
 	.guide-mob {
 		margin: 0 auto;
+
 		@media all and (min-width: $lg) {
 			display: none;
+		}
+	}
+}
+
+.guide-page {
+	.guide-info h2 {
+		max-width: 700px;
+	}
+
+	.guide-recomend {
+		font-size: 18px;
+		color: $white;
+		max-width: 650px;
+	}
+
+	.guide-links {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 250px;
+		margin-bottom: 55px;
+
+		.guide-link {
+			transition: opacity ease $tr;
+
+			&:hover {
+				opacity: $op;
+			}
+		}
+	}
+
+	.guide-heading {
+		font-family: $ff-title;
+		font-style: normal;
+		font-weight: $fw-bold;
+		font-size: 35px;
+		line-height: 110%;
+		color: $white;
+		text-align: left;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $lg) {
+			font-size: 50px;
+			margin-bottom: 40px;
+		}
+	}
+
+	.receive-items {
+		width: 100%;
+		padding: 0;
+
+		@media all and (min-width: $xxl) {
+			padding-left: 16%;
+		}
+	}
+
+	.receive-item {
+		width: 100%;
+		&::before, &::after {
+			display: none;
+		}
+
+		@media all and (min-width: $lg) {
+			&::before {
+				display: block;
+			}
+	
+			&::after {
+				display: block;
+			}
+
+			&:first-child {
+				width: 20%;
+				padding-right: 5px;
+			}
+	
+			&:nth-child(2) {
+				width: 22%;
+				padding: 0 15px;
+			}
+	
+			&:nth-child(3) {
+				width: 20%;
+				padding: 0 15px;
+			}
+	
+			&:nth-child(4) {
+				width: 29%;
+				border-right: 0;
+				padding-left: 15px;
+			}
 		}
 	}
 }
