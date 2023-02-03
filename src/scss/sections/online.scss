@@ -1,0 +1,124 @@
+.online {
+
+	.whatsapp {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	h1 {
+		text-align: center;
+		max-width: 1000px;
+		margin-bottom: 50px;
+	}
+	
+	.free {
+		font-size: 15px;
+		color: $white;
+		text-align: center;
+		margin-bottom: 30px;
+
+		@media all and (min-width: $lg) {
+			font-size: 24px;
+		}
+
+		span {
+			color: $accent;
+		}
+	}
+
+	form {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+		input {
+			border: 0;
+			border-style: none;
+			font-family: $ff;
+			font-weight: $fw-light;
+			font-size: 16px;
+			padding-left: 20px;
+			width: 100%;
+			max-width: 450px;
+			height: 42px;
+			margin-bottom: 10px;
+
+			@media all and (min-width: $lg) {
+				margin-bottom: 0;
+				margin-right: 20px;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.inputs {
+		margin-top: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+	}
+
+	&-time {
+		font-weight: $fw-regular;
+		text-align: center;
+		margin: 5px 0 30px;
+		color: $white;
+	}
+
+	.white {
+		padding: 20px 60px;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	&-info {
+		margin-top: 30px;
+		text-align: center;
+		line-height: 30px;
+		font-size: 18px;
+		color: $white;
+	}
+}
+
+.thanks-page {
+	.wrapper {
+		padding-top: 0;
+	}
+	.thanks {
+		background: $main-bg;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.thanks-wrapper {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.thanks-info {
+		text-align: center;
+		font-family: $ff;
+		font-size: 20px;
+		color: $accent;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+		}
+	}
+}

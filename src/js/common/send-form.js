@@ -2,6 +2,9 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
 	submitForm( '.form' )
+	submitForm( '.books-form' )
+	submitForm( '.whatsapp-form' )
+	submitForm( '.online-form' )
 } )
 
 /**
@@ -40,10 +43,10 @@ const submitForm = selector => {
 						form.classList.remove( 'error' )
 						form.innerHTML = request.response.message
 						setTimeout(() => {
-							location.href = 'thankyou.html'
+							window.location.href = 'thankyou.html'
 						}, 1000);
 
-						if( isRedirect ) location.href = '/thanks.html'
+						if( isRedirect ) location.href = 'thankyou-wa-rhino.html'
 					}	else {	// If error.
 						formResponse.classList.remove( 'success' )
 						formResponse.classList.add( 'error' )

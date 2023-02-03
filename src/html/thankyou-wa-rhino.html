@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex,nofollow" />
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">	
+	<title>Получить пособие</title>
+	<link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body class="thanks-page">
+	<div class="wrapper">
+		<div class="thanks">
+			<div class="container">
+				<div class="thanks-wrapper">
+					<div class="thanks-img">
+						<img src="img/home/about/doc.png" width="300" height="500" alt="">
+					</div>
+					<div class="thanks-info">
+						<p class="thanks-text">
+							Сейчас вас отправит в мессенджер для получения пособия
+						</p>
+						<p class="thanks-text">
+							Не забудьте отправить ключевое слово 'РИНО'
+						</p>
+						<a class="button" href="https://api.whatsapp.com/send/?phone=79776378446&text=Рино">
+							Получить в Whatsapp
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- .wrapper -->
+
+	<script>
+		window.addEventListener( 'load', () => {
+			setTimeout( () => location.href = 'https://api.whatsapp.com/send/?phone=79776378446&text=Рино', 1000 )
+		} )
+	</script>
+</body>
+
+</html>

@@ -9,7 +9,9 @@ import './inputs'
 import './slides/slides'
 
 import './dropdown'
-import './lazyMap'
 import './common/send-form'
 import './anchors'
+import './scrollToTop'
+import './popup'
+import './isInScope'
 
