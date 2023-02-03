@@ -8,7 +8,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 const showMap = () => {
 
-	const map = document.querySelector( '.iframe' )
+	const map = document.querySelector( '.iframe-map' )
 
 	if( ! map ) return
 

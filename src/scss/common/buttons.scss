@@ -246,3 +246,11 @@
 		opacity:  $op;
 	}
 }
+
+.for-anchor {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	left: 0;
+	top: -60px;
+}

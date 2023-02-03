@@ -1,4 +1,5 @@
 .main-video {
+	position: relative;
 	padding: 55px 0 42px;
 
 	@media all and (min-width: $lg) {
@@ -25,6 +26,18 @@
 
 		@media all and (min-width: $lg) {
 			font-size: 70px;
+		}
+	}
+
+	&-title {
+		max-width: 450px;
+
+		@media all and (min-width: $lg) {
+			max-width: 700px;
+		}
+
+		@media all and (min-width: $xl) {
+			max-width: 900px;
 		}
 	}
 

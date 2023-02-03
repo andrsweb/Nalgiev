@@ -1,5 +1,9 @@
 .gallery {
-	padding: 56px 0 53px;
+	padding: 25px 0 25px;
+
+	@media all and (min-width: $lg) {
+		padding: 56px 0 53px;
+	}
 
 	.container {
 		max-width: 1300px;

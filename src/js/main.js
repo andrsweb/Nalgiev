@@ -14,4 +14,5 @@ import './anchors'
 import './scrollToTop'
 import './popup'
 import './isInScope'
+import './slider'
 
