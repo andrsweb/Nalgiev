@@ -11,6 +11,8 @@ const scrollToTop = () => {
 
 	const scrollArrow = document.querySelector( '.scroll-img' )
 
+	if( ! scrollArrow ) return
+
 	window.addEventListener( 'scroll', () => {
 		if( ! scrollArrow ) return
 

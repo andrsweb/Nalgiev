@@ -148,6 +148,7 @@
 	&-wrapper {
 		display: flex;
 		flex-direction: column;
+		position: relative;
 
 		@media all and (min-width: $md) {
 			flex-direction: row;
@@ -187,8 +188,9 @@
 
 	@media all and (min-width: $lg) {
 		position: absolute;
-		bottom: 55px;
-		left: 27px;
+		bottom: 50px;
+		left: 45%;
+		max-width: 200px;
 	}
 
 	.swiper-pagination-bullet {
