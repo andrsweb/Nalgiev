@@ -63,7 +63,7 @@ export const initVideoSwiper = (slider, num, group, next, prev, slides, pag ) =>
 	const swiper = new Swiper(slider, {
 
 		direction: 'horizontal',
-		loop: true,
+		loop: false,
 		slidesPerView: num,
 		slidesPerGroup: group,
 		breakpoints: {

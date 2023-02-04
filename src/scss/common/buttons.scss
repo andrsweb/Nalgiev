@@ -81,6 +81,10 @@
 		height: 25px;
 	}
 
+	@media all and (min-width: $lg) {
+		display: none;
+	}
+
 	span {
 		position: absolute;
 		top: 0;
