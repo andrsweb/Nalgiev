@@ -70,9 +70,14 @@
 
 	.popup-items {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		width: 100%;
 		margin-bottom: 20px;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 	}
 
 	.popup-info {

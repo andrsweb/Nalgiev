@@ -9,7 +9,6 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		
 	}
 
 	&::before {
@@ -303,5 +302,11 @@
 			margin-bottom: 40px;
 			align-items: center;
 		}
+	}
+}
+
+.wa-rhino {
+	@media all and (min-width: $xxl) {
+		min-height: 100vh;
 	}
 }
