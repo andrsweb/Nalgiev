@@ -2,7 +2,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
 	submitForm( '.form' )
-	submitForm( '.books-form' )
 	submitForm( '.whatsapp-form' )
 	submitForm( '.online-form' )
 } )

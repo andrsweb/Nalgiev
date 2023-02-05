@@ -2,9 +2,9 @@
 	position: relative;
 	padding: 40px 0 40px;
 	background-color: $main-bg;
+	width: 100%;
 
 	@media all and (min-width: $xxl) {
-		height: 100vh;
 		background-image: url( '../img/home/hero/hero-bg.png');
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 	}
 
 	.container {
-		max-width: 1220px;
+		max-width: 1300px;
 
 	}
 
@@ -62,20 +62,23 @@
 	}
 
 	&-img {
-		margin-bottom: 20px;
+		margin: 0 auto 30px auto;
+		width: 250px;
 
 		@media all and (min-width: $md) {
-			margin-bottom: 0;
+			width: 410px;
 		}
 
 		img {
-			margin: 0 auto;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
 		}
 	}
 
 	&-inner {
 		@media all and (min-width: $md) {
-			margin-right: 30px;
+			margin-right: 10%;
 		}
 	}
 
@@ -156,12 +159,21 @@
 		align-items: flex-start;
 		margin-bottom: 30px;
 
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+
+			@media all and (min-width: $lg) {
+				flex-direction: row;
+			}
+		}
+
 		@media all and (min-width: $md) {
 			align-items: flex-start;
 		}
 
 		@media all and (min-width: $md) {
-			flex-direction: row;
+			// flex-direction: row;
 		}
 
 		input {
@@ -178,7 +190,7 @@
 			border: 0;
 			margin-bottom: 10px;
 
-			@media all and (min-width: $xl) {
+			@media all and (min-width: $lg) {
 				margin-bottom: 0;
 			}
 
@@ -278,22 +290,18 @@
 .rhino {
 	.whatsapp {
 		background-image: none;
+		background-color: $main-bg;
+		height: auto;
 
 		&-wrapper {
+			padding: 0;
 			background-color: transparent;
 		}
 
 		&-form {
+			flex-direction: column;
 			margin-bottom: 40px;
+			align-items: center;
 		}
 	}
-}
-
-.add-popup .whatsapp-button-wrapp {
-	justify-content: center;
-}
-
-.add-popup .whatsapp-click {
-	left: 50%;
-	transform: translateX(-50%);
 }

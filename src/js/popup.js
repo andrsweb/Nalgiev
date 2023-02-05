@@ -12,12 +12,9 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 const showPopup = () => {
 	const popupWrapper    = document.querySelector( '.rhino .popup-wrapper' )
-	const addPopupWrapper = document.querySelector( '.add-popup-wrapper' )
 	const closeButton     = document.querySelector( '.popup-close' )
 	const addCloseButton  = document.querySelector( '.add-popup-close' )
-	const popButton       = document.querySelector( '.popup-btn' )
 	const body            = document.querySelector( 'header')
-	const benBtn          = document.querySelectorAll( '.whatsapp-button' )
 	setTargetElement( document.querySelector( '#body-lock' ) )
 
 	if( ! popupWrapper ) return
@@ -56,16 +53,5 @@ const showPopup = () => {
 			popupWrapper.classList.remove( 'showed' )
 			enableBodyScroll( getTargetElement() )
 		}
-	} )
-
-	popButton.addEventListener( 'click', () => {
-		addPopupWrapper.classList.add( 'showed' )
-	})
-
-	benBtn.forEach( button => {
-		button.addEventListener( 'click', ( e ) => {
-			e.preventDefault()
-			setTimeout( () => location.href = 'https://api.whatsapp.com/send/?phone=79776378446&text=РИНО', 2000 )
-		} )
 	} )
 }

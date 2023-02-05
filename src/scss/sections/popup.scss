@@ -16,7 +16,7 @@
 		display: flex;
 	}
 
-	.popup, .add-popup {
+	.popup {
 		position: relative;
 		width: 100%;
 		display: flex;
@@ -26,7 +26,7 @@
 		padding: 10px;
 		margin: auto 0;
 		background: $main-bg;
-		max-width: 640px;
+		max-width: 800px;
 
 		@media all and (min-width: $lg) {
 			padding: 50px;
@@ -34,7 +34,7 @@
 	}
 
 	.container {
-		max-width: 680px;
+		max-width: 800px;
 	}
 
 	.popup-close {
@@ -71,10 +71,12 @@
 	.popup-items {
 		display: flex;
 		align-items: center;
+		width: 100%;
+		margin-bottom: 20px;
 	}
 
 	.popup-info {
-		max-width: 230px;
+		max-width: 400px;
 		margin-right: 60px;
 	}
 
@@ -98,6 +100,10 @@
 		line-height: 22px;
 		color: $white;
 		margin-bottom: 12px;
+
+		span {
+			color: gold;
+		}
 
 		@media all and (min-width: $m) {
 			font-size: 17px;
