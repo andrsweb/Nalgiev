@@ -158,19 +158,20 @@
 		font-weight: $fw-regular;
 		font-size: 18px;
 		line-height: $lh-max;
-		color: $inp;
+		color: $white;
 
 		@media all and (min-width: $m) {
 			height: 64px;
 		}
 
 		&::placeholder {
+			opacity: 1;
 			font-family: $ff;
 			font-style: normal;
 			font-weight: $fw-regular;
 			font-size: 18px;
 			line-height: 22px;
-			color: $inp;
+			color: $white;
 		}
 	}
 }
