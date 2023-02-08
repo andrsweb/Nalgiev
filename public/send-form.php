@@ -71,6 +71,7 @@ function as_send_consultation_form(){
 	$name	= isset( $_POST['name'] ) ? as_clean_value( $_POST['name'] ) : null;
 	$tel	= isset( $_POST['tel'] ) ? as_clean_value( $_POST['tel'] ) : null;
 	$promo	= isset( $_POST['promo'] ) ? as_clean_value( $_POST['promo'] ) : '---';
+	$title	= isset( $_POST['title'] ) ? as_clean_value( $_POST['title'] ) : 'Форма заказа консультации';
 
 	// Required fields.
 	if( ! $radio || ! $name || ! $tel ){
@@ -118,18 +119,19 @@ function as_send_consultation_form(){
 
 	// Prepare message for mail.
 	$message = "Привет!\n" .
-		"Форма заказа консультации:\n\n" .
+		"{$title}:\n\n" .
 		"Вариант консультации - $radio\n" .
 		"Имя - $name\n" .
 		"Телефон - $tel\n" .
 		"Промокод - $promo\n\n\n";
 
-	as_send_email( 'Форма заказа консультации', $message );
+	as_send_email( $title, $message );
 }
 
 // Book.
 function as_send_book_form(){
-	$tel = isset( $_POST['tel'] ) ? as_clean_value( $_POST['tel'] ) : null;
+	$tel	= isset( $_POST['tel'] ) ? as_clean_value( $_POST['tel'] ) : null;
+	$title	= isset( $_POST['title'] ) ? as_clean_value( $_POST['title'] ) : 'Форма заказа книги';
 
 	// Required fields.
 	if( ! $tel ){
@@ -159,16 +161,17 @@ function as_send_book_form(){
 
 	// Prepare message for mail.
 	$message = "Привет!\n" .
-		"Форма заказа книги:\n\n" .
+		"{$title}:\n\n" .
 		"Телефон - $tel\n\n\n";
 
-	as_send_email( 'Форма заказа книги', $message );
+	as_send_email( $title, $message );
 }
 
 // Online.
 function as_send_online_form(){
 	$name	= isset( $_POST['name'] ) ? as_clean_value( $_POST['name'] ) : null;
 	$tel	= isset( $_POST['tel'] ) ? as_clean_value( $_POST['tel'] ) : null;
+	$title	= isset( $_POST['title'] ) ? as_clean_value( $_POST['title'] ) : 'Форма заказа онлайн консультации';
 
 	// Required fields.
 	if( ! $name ||  ! $tel ){
@@ -216,11 +219,11 @@ function as_send_online_form(){
 
 	// Prepare message for mail.
 	$message = "Привет!\n" .
-		"Форма заказа онлайн консультации:\n\n" .
+		"{$title}:\n\n" .
 		"Имя - $name\n" .
 		"Телефон - $tel\n\n\n";
 
-	as_send_email( 'Форма заказа онлайн консультации', $message );
+	as_send_email( $title, $message );
 }
 
 /**

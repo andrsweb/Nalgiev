@@ -22,12 +22,14 @@ const submitForm = selector => {
 
 			const formResponse	= form.querySelector( '.form-response' ),
 				request		= new XMLHttpRequest(),
-				formData		= new FormData( form ),
-				formType		= form.dataset.type,
+				formData	= new FormData( form ),
+				formType	= form.dataset.type,
+				formTitle	= form.dataset.title,
 				isRedirect	= form.dataset.thanksRedirect
 
 			// Add request param for large or small form.
 			formData.append( 'func', formType )
+			formData.append( 'title', formTitle )
 			request.open( 'post', 'send-form.php', true )
 			request.responseType = 'json'
 
