@@ -8,7 +8,7 @@
 
 ### 1. Download archive or clone these files with:
 ```
-git clone https://github.com/andreistez/gulp-html.git
+git clone https://github.com/andrsweb/Nalgiev.git
 ```
 
 ### 2. Install dependencies:
