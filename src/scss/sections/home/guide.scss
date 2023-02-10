@@ -205,12 +205,39 @@
 .guide-page {
 	.guide-info h2 {
 		max-width: 700px;
+		font-size: 30px;
+	}
+
+	.guide-img {
+		img {
+			@media all and (min-width: $xl) {
+				max-width: 140%;
+			}
+		}
+	}
+
+	.guide-item {
+		margin-bottom: 5px;
+
+		@media all and (min-width: $xxl) {
+			margin-bottom: 15px;
+		}		
+	}
+
+	.guide-subtitle {
+		margin-bottom: 20px;
+	}
+
+	.guide-text {
+		padding: 0;
+		border: 0;
 	}
 
 	.guide-recomend {
 		font-size: 18px;
 		color: $white;
 		max-width: 650px;
+		margin-bottom: 20px;
 	}
 
 	.guide-links {
@@ -218,7 +245,7 @@
 		align-items: center;
 		justify-content: space-between;
 		max-width: 250px;
-		margin-bottom: 55px;
+		margin-bottom: 20px;
 
 		.guide-link {
 			transition: opacity ease $tr;
@@ -233,14 +260,14 @@
 		font-family: $ff-title;
 		font-style: normal;
 		font-weight: $fw-bold;
-		font-size: 35px;
+		font-size: 20px;
 		line-height: 110%;
 		color: $white;
 		text-align: left;
 		margin-bottom: 20px;
 
 		@media all and (min-width: $lg) {
-			font-size: 50px;
+			font-size: 35px;
 			margin-bottom: 40px;
 		}
 	}
