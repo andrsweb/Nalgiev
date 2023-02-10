@@ -5,22 +5,28 @@ import { setTargetElement, getTargetElement } from './common/global'
 document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
-	setTimeout(() => {
-		showPopup()
-	}, 60000);
+	setTimeout( showPopup, 60000 )
+
+	header.addEventListener( 'mouseleave', e => {
+		const mouseY = e.clientY
+
+		if(  mouseY <= 0 ) {} showPopup()
+	} )
 } )
 
+let popupWrapper = document.querySelector( '.rhino .popup-wrapper' )
+let closeButton  = document.querySelector( '.popup-close' )
+const header     = document.querySelector( 'header')
+
+if ( localStorage.getItem( 'showed' ) ) localStorage.removeItem( 'showed' )
+
 const showPopup = () => {
-	const popupWrapper    = document.querySelector( '.rhino .popup-wrapper' )
-	const closeButton     = document.querySelector( '.popup-close' )
-	const body            = document.querySelector( 'header')
-	setTargetElement( document.querySelector( '#body-lock' ) )
 
 	if( ! popupWrapper ) return
 
-	if ( localStorage.getItem( 'showed' ) ) localStorage.removeItem( 'showed' )
+	setTargetElement( document.querySelector( '#body-lock' ) )
 
-	if(  ! localStorage.getItem( 'showed' ) && ! popupWrapper.classList.contains( 'showed' ) ) {
+	if( ! localStorage.getItem( 'showed' ) && ! popupWrapper.classList.contains( 'showed' ) ) {
 		localStorage.setItem( 'showed', 1 )
 		popupWrapper.classList.add( 'showed' )
 		disableBodyScroll( getTargetElement(), { reserveScrollBarGap: true } )
