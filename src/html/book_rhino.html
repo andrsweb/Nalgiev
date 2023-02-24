@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">	
+	<title>Книга доктора Нальгиева</title>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PQHMCS3');
+	</script>		
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+	<script src="flip-js/flipbook.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script type="text/javascript">
+	
+		$(document).ready(function () {
+			$("#container").flipBook({
+				pdfUrl:"pdf/book.pdf",
+	
+				btnZoomIn : {enabled:false},
+				btnZoomOut : {enabled:false},
+				btnToc : {enabled:false},
+				btnShare : {enabled:false},
+				btnDownloadPages : {enabled:false},
+				btnDownloadPdf : {enabled:false},
+				btnSound : {enabled:false},
+				viewMode:'3d',
+				skin:'dark',
+				menuMargin:10,
+				menuBackground:'none',
+				menuShadow:'none',
+				menuAlignHorizontal:'right',
+				menuOverBook:true,
+	
+				btnRadius:40,
+				btnMargin:4,
+				btnSize:14,
+				btnPaddingV:16,
+				btnPaddingH:16,
+				btnBorder:'2px solid rgba(255,255,255,.7)',
+				btnBackground:"rgba(0,0,0,.3)",
+				btnColor:'rgb(255,120,60)',
+	
+				sideBtnRadius:60,
+				sideBtnSize:60,
+				sideBtnBackground:"rgba(0,0,0,.7)",
+				sideBtnColor:'rgb(255,120,60)',
+				backgroundColor:"#000"
+			});
+		})
+	</script>
+
+</head>
+<body>
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQHMCS3"
+			height="0" width="0" style="display:none;visibility:hidden">
+		</iframe>
+	</noscript>
+
+	<div id="container"></div>
+</body>
+</html>

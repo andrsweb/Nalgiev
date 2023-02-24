@@ -15,4 +15,5 @@ import './scrollToTop'
 import './popup'
 import './isInScope'
 import './slider'
+import './book'
 
