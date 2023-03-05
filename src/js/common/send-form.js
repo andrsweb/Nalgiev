@@ -2,6 +2,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
 	submitForm( '.form' )
+	submitForm( '.whatsapp-form' )
 } )
 
 /**
