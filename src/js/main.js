@@ -16,4 +16,5 @@ import './popup'
 import './isInScope'
 import './slider'
 import './book'
+import './event'
 

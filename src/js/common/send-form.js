@@ -29,6 +29,7 @@ const submitForm = selector => {
 			// Add request param for large or small form.
 			formData.append( 'func', formType )
 			formData.append( 'title', formTitle )
+			formData.append('params', localStorage.getItem('params') )
 			request.open( 'post', 'send-form.php', true )
 			request.responseType = 'json'
 
