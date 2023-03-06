@@ -139,3 +139,17 @@
 	justify-content: center;
 	margin-top: 18px;
 }
+
+.face, .bleph, .lipo {
+	.main-video-title {
+		max-width: 450px;
+
+		@media all and (min-width: $lg) {
+			max-width: 700px;
+		}
+
+		@media all and (min-width: $xl) {
+			max-width: 1100px;
+		}
+	}
+}

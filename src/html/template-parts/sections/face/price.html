@@ -1,0 +1,57 @@
+<section class="price">
+	<div class="for-anchor" id="price"></div>
+	<div class="container">
+		<h2>
+			Сколько стоит операция?
+		</h2>
+		<div class="price-wrapper">
+			<div class="dropdown">
+				<div class="dropdown-title">
+					<h3 class="price-start">
+						Стоимость (только операция)
+					</h3>
+					<img src="img/arrow.png" width="40" height="40" alt="">
+				</div>
+				<div class="dropdown-open">
+					<div class="dropdown-inner">
+						@@loop( 'item.html', [
+							{ 'title': 'Кожно-пластический лифтинг лица', 'value': '100 000 р.', 'class': ''},
+							{ 'title': 'Лифтинг с пластикой СМАС на уровне нижней трети лица', 'value': '150 000 р.', 'class': ''},
+							{ 'title': 'Полный лифтинг с пластикой СМАС и пластикой платизмы', 'value': '200 000 р.', 'class': ''},
+							{ 'title': 'Пластика шеи (платизмопластика)', 'value': '90 000 р.', 'class': ''},
+							{ 'title': 'Пластика субментальной области с липосакцией', 'value': '60 000 р.', 'class': ''},
+							{ 'title': 'Консультация', 'value': '0 р.', 'class': ''}
+						] )
+					</div>
+				</div>
+			</div>
+			<div class="dropdown">
+				<div class="dropdown-title">
+					<h3 class="price-start">
+						Дополнительные услуги 
+					</h3>
+					<img src="img/arrow.png" width="40" height="40" alt="">
+				</div>
+				<div class="dropdown-open">
+					<div class="dropdown-inner">
+						@@loop( 'item.html', [
+							{ 'title': 'Анестезия (наркоз)', 'value': 'От 18 000 р до 55 000 р', 'class': 'additional'},
+							{ 'title': 'Пребывание в стационаре, койко-день до вечера', 'value': '6 000 р', 'class': 'additional'},
+							{ 'title': 'Пребывание в стационаре, койко-день', 'value': '12 000 р', 'class': 'additional'},
+							{ 'title': 'Компрессионное белье', 'value': 'от 3 000 р до 13 000 р', 'class': 'additional'},
+							{ 'title': 'Компрессионное белье', 'value': 'от 3 000 р до 13 000 р', 'class': 'additional'},
+							{ 'title': 'Местная анестезия', 'value': 'Зависит от операции', 'class': 'additional'},
+							{ 'title': 'Анализы', 'value': 'Зависит от операции', 'class': 'additional'},
+							{ 'title': 'Программы реабилитации после пластических операций', 'value': 'Зависит от операции', 'class': 'additional'},
+						] )
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="price-button-wrapper">
+			<a href="#" class="button white price-button">
+				Смотреть все цены
+			</a>
+		</div>
+	</div>
+</section>
