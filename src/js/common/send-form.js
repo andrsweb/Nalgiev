@@ -3,6 +3,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 	submitForm( '.form' )
 	submitForm( '.whatsapp-form' )
+	submitForm( '.online-form' )
 } )
 
 /**

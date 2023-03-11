@@ -7,10 +7,16 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 	setTimeout( showPopup, 60000 )
 
+	if ( ! header ) return
+
 	header.addEventListener( 'mouseleave', e => {
 		const mouseY = e.clientY
 
-		if(  mouseY <= 0 ) {} showPopup()
+		
+		setTimeout(() => {
+			if(  mouseY <= 0 ) {} showPopup()
+		}, 10000)
+		
 	} )
 } )
 
